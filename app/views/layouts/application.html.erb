@@ -21,6 +21,12 @@
       <% if CONFIG['github'] %>
         <li><%= link_to 'github', 'https://github.com/' + CONFIG['github'] %></li>
       <% end %>
+      <% if CONFIG['serverfault'] %>
+        <li><%= link_to 'serverfault', 'http://serverfault.com/users/' + CONFIG['serverfault'] %></li>
+      <% end %>
+      <% if CONFIG['pinboard'] %>
+        <li><%= link_to 'pinboard', 'https://pinboard.in/u:' + CONFIG['pinboard'] %></li>
+      <% end %>
       <% if CONFIG['email'] %>
         <li><%= link_to 'say hi', "mailto:#{CONFIG['email']}?subject:whats up!" %></li>
       <% end %>
